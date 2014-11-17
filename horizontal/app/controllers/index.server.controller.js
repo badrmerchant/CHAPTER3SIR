@@ -16,4 +16,7 @@ exports.render = function(req,res){
     res.render('index' ,{
         title:"Hello world"
     });
+//    res.render(index1,{
+//        title:"badar ahmed sheikh"
+//    });
 }//g
