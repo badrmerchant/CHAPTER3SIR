@@ -16,6 +16,11 @@ module.exports = function () {
     } else if (process.env.NODE_ENV === 'production') {
         app.use(compress());
     }
+
+
+
+
+
     app.use(bodyParser.urlencoded({
         extended: true
     }));
@@ -31,7 +36,7 @@ module.exports = function () {
     app.set('views', './app/views');
     app.set('view engine', 'ejs');
     require('../app/routes/index.server.routes')(app);
-
+    require('../app/routes/users.server.routes')(app);
     app.use(express.static('./public'));
     return app;
 }
