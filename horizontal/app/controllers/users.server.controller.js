@@ -1,7 +1,7 @@
 /**
  * Created by Badar on 11/18/2014.
  */
-var User=require('mongoose').model('User');
+var User=require('mongoose').model('User1');
 
 exports.create=function(req,res,next){
 
