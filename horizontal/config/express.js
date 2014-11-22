@@ -3,12 +3,14 @@
  */
 var config = require('./config'),
     express = require('express'),
+
     morgan = require('morgan'),
     compress = require('compression'),
     bodyParser = require('body-parser'),
     methodOverride = require('method-override'),
     session = require('express-session');
-  passport = require('./config/passport');
+    passport = require('passport');
+
 module.exports = function () {
 
     var app = express();
